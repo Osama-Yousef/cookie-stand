@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap');
+
+     /*  body{ 
+           background-color:darkgray ;
+           display: block;
+           font-family: sans-serif;
+           -webkit-text-size-adjust: 100%;
+           -ms-text-size-adjust: 100%;
+           margin: 50px 50spx ;
+           overflow: auto;
+
+
+           
+        }
+        nav ul li a{ 
+            color:rgb(38, 0, 255);
+           text-decoration: none;
+           text-align: center;
+        }
+         ul li a{
+            text-align: center;
+             color :blue ;
+
+        }
+       nav ul li { display: inline-block;
+                   padding:0 15px ; 
+                   text-align: center;}
+
+
+
+        }
+        header{
+            text-align: center;
+            
+            background-color: beige;
+            padding:2px 23px;
+            border:1px solid #bcb9b9;
+            height: 100px;
+            margin: 20px 0;
+            width: fit-content;
+
+
+
+
+        }
+        footer{
+            padding 2px 23px;
+            background-color: beige;
+            border:1px solid #bcb9b9;
+            text-align: center;
+
+        }
+        main{
+             height: 289px;
+            background:red;
+            margin: 20px 0;
+            padding: 10px 23px;
+            overflow :auto;
+
+        }
+        
+        }
+*/
+body{
+
+    font-family: ubuntu;
+    font-size: 20px;
+    line-height: 30px;
+    word-spacing: 1.5px;
+    height: 1000px;
+    
+
+}
+
+
+
+header.my-header {
+    padding: 22px 30px 60px;
+    background-color: deepskyblue;
+    color: floralwhite;
+    position: sticky;
+    top: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+
+
+
+nav ul li a {
+    padding: 0px 10px;
+    color: dimgray;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: chartreuse;
+}
+
+h1.logo {
+    float: none;
+}
+.my-nav{  
+    float: right;
+}
+
+
+#About {
+    background-image: url(http://getwallpapers.com/wallpaper/full/d/d/e/15134.jpg);
+    color: floralwhite;
+    height: 350px;
+    padding-top: 120px;
+    text-align: -webkit-center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 10px;
+    color: chartreuse;
+}
+
+section#Training {
+    padding: 20px 40px;
+    height: 500px;
+}
+.training-list {
+
+    
+        display: inline-block;
+        width: 235px;
+        padding: 0px 5px;
+        background-color: maroon;
+        float: left;
+        margin-right: 5px;
+        height: 380px;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+
+
+   
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    padding-bottom: 70px;
+}
+
+p {
+    
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.textcenter{
+text-align: center;
+
+}
+/*.color{
+
+    color: black;
+}
+*/
+
+#Experience {
+    color: floralwhite;
+    height: 200px;
+    padding: 10px 0px 20px 10px;
+    
+    line-height: 40px;
+}
+
+#MySkills {
+    height: 400px;
+    color: floralwhite;
+    line-height: 40px;
+    padding: 10px 0px 20px 10px;
+}
+
+  .backgroundimg{
+
+    background-image: url(https://www.guvenyakan.com.tr/wp-content/uploads/2019/11/cropped-Grey-website-background.png);
+  }
+
+  #Training {
+    color: floralwhite;
+}
+#Contactme {
+    background-image: url(https://wallpaperplay.com/walls/full/2/b/a/38968.jpg);
+    color: floralwhite;
+    height: 270px;
+    line-height: 40px;
+    padding: 10px 0px 20px 10px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: floralwhite;
+    padding: 10px 0px 20px 10px;
+}
+
+footer ul li a:hover {
+    color: darkred;
+}
