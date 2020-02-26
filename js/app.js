@@ -559,9 +559,6 @@ tableContainer.appendChild(tableEl);
 var tr1El = document.createElement('tr');
 tableEl.appendChild(tr1El);
 
-var ulEl = document.createElement('ul');
-tableContainer.appendChild(ulEl);
-
 var th1El = document.createElement('th');
 th1El.textContent=' ';
 tr1El.appendChild(th1El);
