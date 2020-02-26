@@ -106,7 +106,7 @@ h1.logo {
 
 
 #About {
-    background-image: url(http://getwallpapers.com/wallpaper/full/d/d/e/15134.jpg);
+    background-image: url(https://images.unsplash.com/photo-1582640164081-7c77d0aee591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     color: floralwhite;
     height: 350px;
     padding-top: 120px;
@@ -182,14 +182,14 @@ text-align: center;
 
   .backgroundimg{
 
-    background-image: url(https://www.guvenyakan.com.tr/wp-content/uploads/2019/11/cropped-Grey-website-background.png);
+    background-image: url(https://images.unsplash.com/photo-1582640164081-7c77d0aee591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
   }
 
   #Training {
     color: floralwhite;
 }
 #Contactme {
-    background-image: url(https://wallpaperplay.com/walls/full/2/b/a/38968.jpg);
+    background-image: url(https://images.unsplash.com/photo-1582640164081-7c77d0aee591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     color: floralwhite;
     height: 270px;
     line-height: 40px;
@@ -203,4 +203,18 @@ footer ul li a {
 
 footer ul li a:hover {
     color: darkred;
+}
+#middle {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    height: 400px;
+    margin-top: 65px;
+    border:3px solid #999;
+    background-color:#333;
+    }
+
+#middlecontent {
+    font: normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
