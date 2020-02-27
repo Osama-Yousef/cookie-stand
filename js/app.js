@@ -690,8 +690,6 @@ hourTotal();
 
 
 
-
-
 //making the form 
 
 
