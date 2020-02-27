@@ -649,45 +649,6 @@ totalTotal.textContent = totalForTotal;
 finalTotal.appendChild(totalTotal);
 
 
-/*
-
-//making the form 
-
-
-//access the form so we can attach an event listener
-var newstoreform = document.getElementById('newstoreform');
-
-//event listeners call back function
-function addNewStore(event){ 
-  // prevents page from refreshing upon event
-  event.preventDefault();
-
-//assigning new value to property assigned to current property; (target) is the form; minCustPerHour is set in HTML input tag;
-var newname = event.target.name.value;
-
-var newMinCustomer= event.target.MinCustomer.value;
-var newMaxCustomer = event.target.MaxCustomer.value;
-var newAvgCookie = event.target.Avgcookie.value;
-//console.log(newname);
-// make new instance by passing in new arguements
-new Store(newMinCustomer, newMaxCustomer, newAvgCookie, newname);
-
-//console.log(new Store);
-tableContainer.innerHTML='';
-newstoreform.getNumofcookie();
-newstoreform.render();
-newstoreform.tableOutput();
-newstoreform.hourTotal();
-}
-
-//add event listener, listening for event, put at bottom for code readability
-newstoreform.addEventListener('Submit', addNewStore);
-
-//Now we need to call our functions -- in the proper order
-
-hourTotal();
-*/
-
 
 
 
@@ -695,43 +656,51 @@ hourTotal();
 //making the form 
 
 
-//access the form so we can attach an event listener
+//accessing the form to make an event listener
 var newstoreform = document.getElementById('newstoreform');
 
-//event listeners call back function
-//function addNewStore(event){ 
-  // prevents page from refreshing upon event
-  newstoreform.addEventListener('Submit' , function(event){
+//event listeners will call the  function
+  newstoreform.addEventListener('submit' , function(event){
+  // to make page not refreshing 
 
 event.preventDefault();
-
+//assigning new values to our properities
 var newname = event.target.name.value;
 console.log(newname);
 var newMinCustomer= event.target.MinCustomer.value;
-var newMaxCustomer = event.target.MaxCustomer.value;
-var newAvgCookie = event.target.Avgcookie.value;
-//error checking for values in all boxes
-if (!newname.value || !newMinCustomer.value || !newMaxCustomer.value || !newAvgCookie.value ) {
-  return alert('Please fill in all values');
-}
-//error checking for number value
-else if (isNaN(newMinCustomer.value) || isNaN(newMaxCustomer.value) || isNaN(newAvgCookie.value)) {
-return alert('Please enter a number');
-}
-//error checking for max and min values
-else if (Number(newMinCustomer.value) > Number(newMaxCustomer.value)) {
-return alert('Please enter a maximum customers per hours value greater than the minimum customers per hour');
-}
-else {
-console.log("No errors");
-}
+console.log(newMinCustomer);
+var newMAX = event.target.Max.value;
+console.log(newMAX);
+var newAvg= event.target.Avg.value;
+console.log(newAvg);
 
-var newnewform = new Store(newname,newMinCustomer,newMaxCustomer,newAvgCookie);
-//console.log(newnewform);
-newnewform.getNumofcookie();
-newnewform.render();
-newnewform.tableOutput();
-newnewform.hourTotal();
+tableEl.deleteRow(tableEl.rows.length-1);
+// making a new instance
+ var newest = new Store(newname,newMinCustomer,newMAX,newAvg);
+ console.log(newest);
+ newest.getNumofcookie();
+ newest.render();
+ newest.tableOutput();
+ //newest.hourTotal();
+ var finalTotal = document.createElement('tr');
+ tableEl.appendChild(finalTotal);
+ 
+ var tdTotalEl = document.createElement('td');
+ tdTotalEl.textContent= 'Totals' ;
+ finalTotal.appendChild(tdTotalEl);
+ 
+ for(var j=0 ; j<hours.length ; j++){
+   var lastRow = document.createElement('td');
+   lastRow.textContent=hoursTotalArray[j];
+   finalTotal.appendChild(lastRow);
+ 
+ }
+ 
+ var totalTotal = document.createElement('td');
+ totalTotal.textContent = totalForTotal;
+ finalTotal.appendChild(totalTotal);
+ 
+
   });
 
 
