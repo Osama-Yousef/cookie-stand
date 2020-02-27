@@ -651,8 +651,6 @@ finalTotal.appendChild(totalTotal);
 
 
 
-
-
 //making the form 
 
 
