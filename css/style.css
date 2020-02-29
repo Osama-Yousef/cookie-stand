@@ -11,6 +11,7 @@
 
 
            
+           
         }
         nav ul li a{ 
             color:rgb(38, 0, 255);
@@ -61,6 +62,55 @@
         
         }
 */
+
+
+table, th, td {
+    border: 5px  black;
+    border-collapse: collapse;
+    border-radius: 3em;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+  th {
+    text-align: center;
+  }
+
+  table {
+    border-spacing: 5px;
+  }
+
+  table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  table#t01 th {
+    color: white;
+    background-color: black;
+  }
+
+
+.my-header img {
+    float: left;
+    width: 140px;
+    height: 110px;
+    margin-top: -20px;
+    margin-right: -15px;
+    margin-left: -14px;
+  }
+  
+  .my-header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
 body{
 
     font-family: ubuntu;
@@ -76,7 +126,7 @@ body{
 
 header.my-header {
     padding: 22px 30px 60px;
-    background-color: deepskyblue;
+    background-color: black;
     color: floralwhite;
     position: sticky;
     top: 0;
@@ -89,12 +139,12 @@ nav ul li {
 
 nav ul li a {
     padding: 0px 10px;
-    color: dimgray;
+    color:floralwhite;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: chartreuse;
+    color: red;
 }
 
 h1.logo {
@@ -106,7 +156,6 @@ h1.logo {
 
 
 #About {
-    background-image: url(https://images.unsplash.com/photo-1582640164081-7c77d0aee591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     color: floralwhite;
     height: 350px;
     padding-top: 120px;
@@ -139,6 +188,11 @@ section#Training {
         margin-top: 15px;
     }
 
+
+
+    #HoursOpen {
+        text-align: -webkit-center;
+    }
 
 
    
@@ -182,14 +236,12 @@ text-align: center;
 
   .backgroundimg{
 
-    background-image: url(https://images.unsplash.com/photo-1582640164081-7c77d0aee591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
   }
 
   #Training {
     color: floralwhite;
 }
 #Contactme {
-    background-image: url(https://images.unsplash.com/photo-1582640164081-7c77d0aee591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     color: floralwhite;
     height: 270px;
     line-height: 40px;
@@ -217,4 +269,50 @@ footer ul li a:hover {
 #middlecontent {
     font: normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding: 10px;
+}
+
+iframe#frame1 {
+    margin-top: 50px;
+    /* padding: 0px 0px 0px 200px; */
+    margin-top: 12px;
+    margin-bottom: 40px;
+    margin-left: 202px;
+}
+
+iframe#frame2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+iframe#frame3 {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: 255px;
+}
+
+iframe#frame4 {
+    margin-bottom: 60px;
+    margin-left: 205px;
+}
+
+iframe#frame5 {
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    display: flex;
+  }
+  
+  /* Clear floats after image containers */
+  .row {
+    display: flex;
+  }
+
+  section#Products {
+    margin-left: 50px;
 }
